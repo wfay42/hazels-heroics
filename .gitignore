@@ -4,3 +4,4 @@
 *.rpymc
 /log.txt
 /.vscode
+/game/cache

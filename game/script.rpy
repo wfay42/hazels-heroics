@@ -4,7 +4,16 @@
 # name of the character.
 
 define e = Character("Eileen")
+define h = Character("Hazel")
 
+# A smooth dissolve over 2 seconds
+define d2 = Dissolve(2)
+
+# Custom transformations for positioning
+transform tl:
+    xpos -0.3
+transform tr:
+    xpos 0.3
 
 # The game starts here.
 
