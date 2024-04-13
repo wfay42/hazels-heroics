@@ -2,6 +2,9 @@
 *.rpyb
 *.rpyc
 *.rpymc
+/errors.txt
 /log.txt
+/traceback.txt
 /.vscode
 /game/cache
+/game/saves

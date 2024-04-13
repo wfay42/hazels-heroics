@@ -3,8 +3,9 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define e = Character("Eileen")
 define h = Character("Hazel")
+define m = Character("Maika")
+define e = Character("Eriko")
 
 # A smooth dissolve over 2 seconds
 define d2 = Dissolve(2)
@@ -29,14 +30,15 @@ label start:
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-    show eileen happy
+    show hazel happy
 
     # These display lines of dialogue.
 
-    e "You've created a new Ren'Py game."
+    h "You've created a new Ren'Py game."
 
-    e "Once you add a story, pictures, and music, you can release it to the world!"
+    h "Once you add a story, pictures, and music, you can release it to the world!"
 
+    jump chapter01_start
     # This ends the game.
 
     return
