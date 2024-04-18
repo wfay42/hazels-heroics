@@ -14,16 +14,19 @@ Option 3: Maika uses her strength to break free
   Breaks free, falls into slime pit, TFs, then TFs others.
 """
 label chapter01_start:
-    scene bg cave ground side
-    show sg ground
+    scene bg cave outside
     "We join our heroines as they work to hunt down a mischievous cave-dwelling slimegirl."
 
+    scene bg cave ground side
+    show sg ground
+    "The slime girl is diligently creating eggs to convert new slime girls."
+
     scene bg cave upper
-    "However, they seem to be a bit over their heads."
+    "But where are our intrepid heroines?"
 
     show h upside normal
     h "Time to analyze the situation!"
-    
+
     show e upside normal at tl
     e "Do we really need to do tha..."
     h "One: We are upside down. Two: We are suspended above the slime girl. Three: She is building slime eggs to turn us into slime girls."
@@ -33,6 +36,7 @@ label chapter01_start:
     jump ch01_start_menu
 
 label ch01_start_menu:
+
     scene bg cave upper
     show h upside normal
     show e upside normal at tl
@@ -44,7 +48,7 @@ label ch01_start_menu:
 
         "Eriko's ice magic":
             jump ch01_ice
-        
+
         "Maika's holy strength":
             jump ch01_strength
 
@@ -63,7 +67,7 @@ label ch01_ice:
 label ch01_strength:
     h "Maika! Use your holy strength and break out!"
     m "Darn, I was hoping to save that for something more interesting. Oh well."
-    
+
     scene bg cave upper
     show m upside divine
 
@@ -72,17 +76,18 @@ label ch01_strength:
     scene bg cave ceiling
     show m upside falling
     "Maika breaks free from her slime imprisonment, falling to the slime nest below to confront the slime girl."
+    "Although it only lasts a few moments, her divine strength should be enough for her to tear the slime girl apart."
 
     scene bg cave ground
     show m upside egg
     "At least that's what would have happened if she hadn't fallen right into the slime egg prepared for her."
     h "Maika!"
-    
+
     scene bg cave ground side
     show m upside egg side
     "With the short burst of her holy strength already vanished, Maika struggles to escape from the egg."
     "She can feel it seeping into her pores, changing her."
-    
+
     show m upside egg burst with d2
     "Before long, she emerges. Another slime girl, ready to assimilate. Maika's heart has crystalized and is now worn on her chest. The weak point for any slime girl."
 
@@ -90,5 +95,8 @@ label ch01_strength:
     show m upside end 01
     "She and her new sister don't hesitate to grab Eriko and Hazel and show them the way."
 
+    camera:
+        matrixcolor SaturationMatrix(0)
     "Slime Maika End"
+    camera
     jump ch01_start_menu
