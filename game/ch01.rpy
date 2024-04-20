@@ -55,8 +55,51 @@ label ch01_start_menu:
 label ch01_fire:
     h "Eriko, use your fire magic to melt the slime!"
     e "Alright, but don't blame me if your eyebrows get singed."
+    "Without much effort (or at least enthusiasm), Eriko conjures flames on each of the three slime prisons. After quickly melting away, our heroines begin to drop meet their foe below."
 
-    "Without much effort, or at least enthusiasm, Eriko conjures flames on each of the three slime prisons. After quickly melting away, our heroines begin to drop to the nest below."
+    scene bg cave ceiling
+    show e upside falling
+    "Of course, they did not think they would need to confront their enemy while still upside down."
+
+    scene bg cave ground
+    show e upside egg
+    "Unable to right themselves quickly, our three heroines fall directly into the slime eggs waiting for them."
+
+    scene bg cave ground
+    show eggsback
+    show eggsfront
+    "The skin of the eggs seals up almost instantly, completely trapping our heroines inside."
+
+    window hide
+    show eggsfront transp
+    show e upside egg sit behind eggsfront
+    with d2
+    pause
+    window show
+    "The slime is both caustic to their clothing, but soothing to their bodies. Floating in the sac of slime, they are lulled into a dreamless sleep; unable to struggle against their impending transformation."
+
+    window hide
+    show e upside egg slime behind eggsfront
+    with d2
+    pause
+    window show
+    "In a matter of minutes, the slime transformation is complete. Our heroines sit, resting their beautiful slime bodies as the membrane on their eggs begins to thin."
+
+    scene bg cave floor slimes
+    show e upside slimes
+    "Eriko, Hazel, and Maika emerge from their eggs with an expression of dull joy. Their bodies are titillated by the dramatic transformation they have just gone through."
+
+    scene bg cave floor slimes 02
+    show e upside slimes 02
+    "Without hesitation they being to pleasure themselves, enjoying every second of the experience. The slime girl who helped them come to experience this joins her new progeny."
+
+    show e upside slimes 03
+    "It only takes a few moments more before they all begin to pair off to find the limits of their new bodies. Of course, they can only have so much fun until the next set of adventurers arrives."
+
+    camera:
+        matrixcolor SaturationMatrix(0)
+    "Slime Party End"
+    camera
 
     jump ch01_start_menu
 
