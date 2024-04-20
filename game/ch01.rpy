@@ -55,6 +55,7 @@ label ch01_start_menu:
 label ch01_fire:
     h "Eriko, use your fire magic to melt the slime!"
     e "Alright, but don't blame me if your eyebrows get singed."
+    show flames cave behind e, h, m
     "Without much effort (or at least enthusiasm), Eriko conjures flames on each of the three slime prisons. After quickly melting away, our heroines begin to drop meet their foe below."
 
     scene bg cave ceiling
@@ -104,7 +105,19 @@ label ch01_fire:
     jump ch01_start_menu
 
 label ch01_ice:
-    ""
+    h "Eriko, ice magic! Freeze the slime cages and we can break ourselves out."
+    e "Hmm, that's actually not a half-bad plan."
+
+    show ice cave
+    "Eriko's ice magic blows a chilling wind across the three ladies. Despite things getting a bit nippy, the slime freezes quickly, allowing their escape."
+
+    scene bg cave ceiling
+    show h upside falling
+    "The three adventurers methodically break away the right pieces to liberate themselves without alerting their captor. Taking their time, they right themselves to prevent plummeting upside down."
+
+    show h upside falling 02
+    "The slime girl standing in her nest is caught quite off-guard when her three prisoners descend upon her."
+
     jump ch01_start_menu
 
 label ch01_strength:
