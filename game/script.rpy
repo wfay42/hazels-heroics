@@ -4,8 +4,9 @@
 # name of the character.
 
 define h = Character("Hazel")
-define m = Character("Maika")
-define e = Character("Eriko")
+define m = Character("Maika", who_color="#cccc00")
+define e = Character("Eriko", who_color="#00aaee")
+define sg = Character("Slime Girl", who_color="#cc0000")
 
 # A smooth dissolve over 2 seconds
 define d2 = Dissolve(2)
