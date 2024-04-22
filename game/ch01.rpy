@@ -14,6 +14,10 @@ Option 3: Maika uses her strength to break free
   Breaks free, falls into slime pit, TFs, then TFs others.
 """
 label chapter01_start:
+    # reset any variables, then go onto the rest
+    jump chapter01_start_02
+
+label chapter01_start_02:
     scene bg cave outside
     "We join our heroines as they work to hunt down a mischievous cave-dwelling slimegirl."
 
@@ -116,9 +120,25 @@ label ch01_ice:
     "The three adventurers methodically break away the right pieces to liberate themselves without alerting their captor. Taking their time, they right themselves to prevent plummeting upside down."
 
     show h upside falling 02
-    "The slime girl standing in her nest is caught quite off-guard when her three prisoners descend upon her."
+    "The slime girl, standing in her nest below, is caught quite off-guard when her three prisoners descend upon her."
 
-    jump ch01_start_menu
+    scene bg cave ontop
+    show h upside on slime
+    sg "Ugh. How did you escape!?"
+    h "Wouldn't you like to know? It's a little thing called ingenuity."
+    e "Or dumb luck. Can you stop gloating for a second and capture her before she gets the jump on us again?"
+    h "Right, I was just getting to that."
+    "Hazel quickly grabs the heart gemstone sticking out of the slime girl's chest and pulling until it comes loose from the slime. The slime girl's body dissolves into the ground almost instantly."
+
+    scene bg cave outside 02
+    h "Yes! Our first mission was a success. We have the slime girl's heartstone, and now we can return victorious!"
+    e "Indeed. I pray our next mission is not such a close call?"
+    m "No need to sweat it Eriko! A win is a win. Plus we couldn't have done it without your ice magic, so you should feel proud too."
+    e "Pride will be our undoing."
+    h "I think Maika was saying 'Thank you.'"
+    e "Oh, then you're welcome."
+
+    jump chapter02_start
 
 label ch01_strength:
     h "Maika! Use your holy strength and break out!"
